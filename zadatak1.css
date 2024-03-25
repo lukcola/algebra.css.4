@@ -23,7 +23,27 @@ div {
     margin: 0.5em 0;
 }
 
-.fc div:first-child{
+.fc div:first-child {
     font-weight: bold;
     background-color: lightgreen;
+}
+
+.nth1 div:nth-child(odd) {
+    font-weight: bold;
+    background-color: lightgreen;
+}
+
+.nth2 *:nth-child(-n+3) {
+    font-weight: bold;
+    background-color: #fcc;
+}
+
+.fot div:first-of-type {
+    font-weight: bold;
+    background-color: #ecf;
+}
+
+.oot *:only-of-type {
+    font-weight: bold;
+    background-color: magenta;
 }

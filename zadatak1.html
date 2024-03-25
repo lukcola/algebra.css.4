@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="hr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zadatak1</title>
+    <title>Pseudo-klase</title>
     <link rel="stylesheet" href="zadatak1.css">
 </head>
+
 <body>
     <h1>Pseudo-klase</h1>
     <h2>div:first-child</h2>
@@ -21,5 +23,74 @@
             <div>Drugi div blok unutar trećeg</div>
         </div>
     </section>
+
+    <br>
+    <hr><br>
+
+    <h2>div:nth-child(odd)</h2>
+    Svaki div element koji je na <b>neparnoj</b> poziciji na svom nivou.
+    <section class="nth1">
+        <div>Prvi div blok u sekciji</div>
+        <div>Drugi div blok</div>
+        <p>Umetnut paragraf</p>
+        <div>Treći div blok</div>
+        <div>Četvrti div blok</div>
+        <div>Peti div blok</div>
+    </section>
+
+    <br>
+    <hr><br>
+
+    <h2>*:nth-child(-n+3)</h2>
+    Bilo koja <b>prva tri elementa</b> na nivou.
+    <section class="nth2">
+        <div>Prvi blok div u sekciji</div>
+        <div>Drugi div blok</div>
+        <p>Umetnut paragraf</p>
+        <div>Treći div blok</div>
+        <div>Četvrti div blok</div>
+        <div>Peti div blok</div>
+    </section>
+
+    <br>
+    <hr><br>
+
+    <h2>div:first-of-type</h2>
+    Svaki div element, <b>ako je prvi</b> od div-ova na svom hijerarhijskom nivou.
+    <section class="fot">
+        <div>Prvi blok div u sekciji</div>
+        <div>Drugi div blok</div>
+        <p>Umetnut paragraf</p>
+        <div>Treći div blok
+            <p>Paragraf unutar trećeg bloka</p>
+            <div>Prvi div u trećem bloku</div>
+            <div>Drugi div u trećem bloku</div>
+        </div>
+        <div>Četvrti div blok</div>
+        <div>Peti div blok</div>
+    </section>
+
+    <br>
+    <hr><br>
+
+    <h2>*:only-of-type</h2>
+    Svaki element <b>koji je jedini</b> (jedini paragraf, jedini div...) na svom hijerarhijskom nivou.
+    <section class="oot">
+        <div>Prvi blok div u sekciji</div>
+        <div>Drugi div blok</div>
+        <p>Jedini paragraf u velikom bloku</p>
+        <div>Treći div blok
+            <p>Paragraf unutar trećeg bloka</p>
+            <div>Jedini div u trećem bloku</div>
+            <p>Drugi paragraf u trećem bloku</p>
+        </div>
+        <div>Četvrti div blok</div>
+        <div>Peti div blok</div>
+    </section>
+
+    <br>
+    <hr><br>
+
 </body>
+
 </html>
