@@ -22,3 +22,8 @@ div {
     border: 1px blue solid;
     margin: 0.5em 0;
 }
+
+.fc div:first-child{
+    font-weight: bold;
+    background-color: lightgreen;
+}
