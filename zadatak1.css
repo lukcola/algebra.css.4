@@ -47,3 +47,13 @@ div {
     font-weight: bold;
     background-color: magenta;
 }
+
+.nthl div:nth-last-of-type(2) {
+    font-weight: bold;
+    background-color: #ccf;
+}
+
+.ntt div.kk:nth-of-type(odd) {
+    font-weight: bold;
+    background-color: orange;
+}
